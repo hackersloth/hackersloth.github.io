@@ -1,0 +1,68 @@
+body {
+    color: #774F38;
+    background-color: #ECE5CE;
+    font-family: 'Lato', sans-serf;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+p.hint {
+    font-size: 15px;
+}
+
+#password input[type="password"] {
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 3px #999;
+    font-size: 20px;
+    color: #E08E79;
+}
+
+#password input[type="password"]:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 4px #F1D4AF;
+}
+
+#password .button {
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #E08E79;
+    cursor: pointer;
+}
+
+#next {
+    display: none;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#next img {
+    float: left;
+}
+
+#next img:nth-child(3) {
+    clear: left;
+}
+
+#wish {
+    display: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
