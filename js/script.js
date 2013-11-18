@@ -1,8 +1,6 @@
 var ENTER_KEY = 13;
 var password_prompt = 'Enter the secret password to find out!'
-// var hint = "(check out the source code for inspiration)"
 var hint = "(hint: inspect me!)"
-// var hint_html = "<!-- SUPER SECRET PASSWORD: hackersloth -->"
 var first_password = false;
 var party_sloths = {
     'images/sexy.gif': 0, 
@@ -11,7 +9,6 @@ var party_sloths = {
     'images/yolo.gif': 3
 }
 var loaded_party_sloths = [];
-// var num_party_sloths = 4;
 
 $(function() {
     $('.button').mouseup(enter_password);
@@ -63,10 +60,6 @@ function first_transition() {
 }
 
 function birthday() {
-    // var sexy = $('<img>').attr('src', 'images/sexy.gif').load(img_load);
-    // var swag = $('<img>').attr('src', 'images/swag.gif').load(img_load);
-    // var gangsta = $('<img>').attr('src', 'images/gangsta.gif').load(img_load);
-    // var yolo = $('<img>').attr('src', 'images/yolo.gif').load(img_load);
     for (var sloth in party_sloths) {
         if (party_sloths.hasOwnProperty(sloth)) {
             $('<img>').attr('src', sloth).load(img_load);
